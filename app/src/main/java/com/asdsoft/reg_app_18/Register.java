@@ -310,7 +310,7 @@ register.setEnabled(false);
                 .build();
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         ApiClient api = retrofit.create(ApiClient.class);
-
+        Toast.makeText(getApplicationContext(),gname,Toast.LENGTH_LONG).show();
         Call<List<DataRecv>> call = api.sendData(firebaseUser.getPhoneNumber(),
                                                 gname,
                                                 serverData.name,

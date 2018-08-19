@@ -119,7 +119,9 @@ public class    MainActivity extends AppCompatActivity
                                 SharedPreferences.Editor editor = getSharedPreferences("cllgName", MODE_PRIVATE).edit();
                                 editor.putInt("cllgName", spinner.getSelectedItemPosition());
                                 editor.apply();
+                                Intent i = getIntent();
                                 Intent intent = new Intent(MainActivity.this, Register.class);
+                                intent.putExtra("gname",i.getStringExtra("gname"));
                                 intent.putExtra("name",contestantName);
                                 intent.putExtra("name2",contestantName2);
                                 intent.putExtra("name3",contestantName3);

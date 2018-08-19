@@ -63,6 +63,7 @@ public class Wait extends AppCompatActivity {
     public void  startA(String gname){
         Intent i = new Intent(Wait.this,MainActivity.class);
         i.putExtra("gname",gname);
+        Log.e("TAG",gname);
         startActivity(i);
     }
 

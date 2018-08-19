@@ -7,7 +7,7 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 
 public interface ApiClient {
-    public static final String BASE_URL = "http://webone.tk/regapp/";
+    public static final String BASE_URL = "https://app.credenz.info/";
 
     @FormUrlEncoded
     @POST("restapi.php")
