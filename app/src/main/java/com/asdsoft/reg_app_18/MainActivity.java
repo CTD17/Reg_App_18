@@ -78,7 +78,6 @@ public class    MainActivity extends AppCompatActivity
 
         final EditText email=findViewById(R.id.email);
         final EditText phone=findViewById(R.id.ph_no);
-        final EditText college=findViewById(R.id.name4);
         final CheckBox checkBox=findViewById(R.id.ieee);
         Button button=findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {              //BUTTON ON-CLICK
@@ -88,12 +87,16 @@ public class    MainActivity extends AppCompatActivity
                 final String contestantEmail=email.getText().toString().trim();     //EMAIL
                 final String contestantPhone=phone.getText().toString().trim();     //PHONE
                 final String contestantName2=name2.getText().toString().trim();
+                final String contestantEmail2=((EditText)(findViewById(R.id.email2))).getText().toString().trim();     //EMAIL
+
                 final String contestantName3=name3.getText().toString().trim();
+                final String contestantEmail3=((EditText)(findViewById(R.id.email3))).getText().toString().trim();     //EMAIL
                 final String contestantName4=name4.getText().toString().trim();
+                final String contestantEmail4=((EditText)(findViewById(R.id.email4))).getText().toString().trim();     //EMAIL
                 String tempString=null;
                 if(spinner.getSelectedItem().toString().equals("Other…"))
                 {
-                    tempString=((EditText)findViewById(R.id.other)).getText().toString();;
+                    tempString=((EditText)findViewById(R.id.other)).getText().toString();
                 }
                 else
                 {
@@ -116,6 +119,7 @@ public class    MainActivity extends AppCompatActivity
                         {
                             if(!contestantCollege.equals("Select Visiting College")&&!contestantCollege.isEmpty())
                             {
+
                                 SharedPreferences.Editor editor = getSharedPreferences("cllgName", MODE_PRIVATE).edit();
                                 editor.putInt("cllgName", spinner.getSelectedItemPosition());
                                 editor.apply();
@@ -127,6 +131,9 @@ public class    MainActivity extends AppCompatActivity
                                 intent.putExtra("name3",contestantName3);
                                 intent.putExtra("name4",contestantName4);
                                 intent.putExtra("email",contestantEmail);
+                                intent.putExtra("email2",contestantEmail2);
+                                intent.putExtra("email3",contestantEmail3);
+                                intent.putExtra("email4",contestantEmail4);
                                 intent.putExtra("phone",contestantPhone);
                                 intent.putExtra("college",contestantCollege);
                                 intent.putExtra("ieee",ieeeMember);

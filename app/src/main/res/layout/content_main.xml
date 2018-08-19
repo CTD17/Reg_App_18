@@ -77,6 +77,25 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:ems="10"
+                        android:hint="*E-mail 1"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="#A9A9A9 "
+                        android:textSize="22sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.51"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+                    <EditText
                         android:id="@+id/name2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -94,6 +113,25 @@
                         app:layout_constraintHorizontal_bias="0.51"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/ph_no" />
+
+                    <EditText
+                        android:id="@+id/email2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:ems="10"
+                        android:hint="E-mail 2"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="#A9A9A9 "
+                        android:textSize="22sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.51"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/name" />
 
                     <EditText
                         android:id="@+id/name3"
@@ -115,6 +153,25 @@
                         app:layout_constraintTop_toBottomOf="@+id/ph_no" />
 
                     <EditText
+                        android:id="@+id/email3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:ems="10"
+                        android:hint="E-mail 3"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="#A9A9A9 "
+                        android:textSize="22sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.51"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+                    <EditText
                         android:id="@+id/name4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -134,14 +191,14 @@
                         app:layout_constraintTop_toBottomOf="@+id/ph_no" />
 
                     <EditText
-                        android:id="@+id/email"
+                        android:id="@+id/email4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="40dp"
                         android:layout_marginEnd="8dp"
                         android:ems="10"
-                        android:hint="*E-mail"
+                        android:hint="E-mail 4"
                         android:inputType="textEmailAddress"
                         android:maxLines="1"
                         android:textColor="@color/colorPrimaryDark"

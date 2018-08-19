@@ -106,6 +106,9 @@ public class Database {
         serverdata.name3=prevData.getRegName3();
         serverdata.name4=prevData.getRegName4();
         serverdata.email=prevData.getRegEmail();
+        serverdata.email2=prevData.getRegEmail2();
+        serverdata.email3=prevData.getRegEmail3();
+        serverdata.email4=prevData.getRegEmail4();
         serverdata.phone=prevData.getRegPhone();
         serverdata.date=prevData.getRegDate();
         serverdata.total=prevData.gettotal();
@@ -124,11 +127,13 @@ public class Database {
         serverdata.Pixelate=prevData.getReceipt().get(8).getCheck() ? 1:0;
         serverdata.Roboliga=prevData.getReceipt().get(9).getCheck() ? 1:0;
         serverdata.Reverse_Coding=prevData.getReceipt().get(10).getCheck() ? 1:0;
-        serverdata.Quiz=prevData.getReceipt().get(11).getCheck() ? 1:0;
-        serverdata.Software_Development=prevData.getReceipt().get(12).getCheck() ? 1:0;
-        serverdata.WebWeaver=prevData.getReceipt().get(13).getCheck() ? 1:0;
-        serverdata.WallStreet=prevData.getReceipt().get(14).getCheck() ? 1:0;
-        serverdata.Xodia=prevData.getReceipt().get(15).getCheck() ? 1:0;
+        serverdata.QuizB=prevData.getReceipt().get(11).getCheck() ? 1:0;
+        serverdata.QuizG=prevData.getReceipt().get(12).getCheck() ? 1:0;
+        serverdata.QuizM=prevData.getReceipt().get(13).getCheck() ? 1:0;
+        serverdata.Software_Development=prevData.getReceipt().get(14).getCheck() ? 1:0;
+        serverdata.WebWeaver=prevData.getReceipt().get(15).getCheck() ? 1:0;
+        serverdata.WallStreet=prevData.getReceipt().get(16).getCheck() ? 1:0;
+        serverdata.Xodia=prevData.getReceipt().get(17).getCheck() ? 1:0;
 
 
     }

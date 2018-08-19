@@ -37,7 +37,7 @@ public class Prev extends AppCompatActivity {
                             null,
                             null,
                             null,
-                            null,
+                            null,null,null,null,
                             cursor.getString(cursor.getColumnIndex("unique_id")),
                             cursor.getInt(cursor.getColumnIndex("total")),
                             cursor.getInt(cursor.getColumnIndex("total_events")),

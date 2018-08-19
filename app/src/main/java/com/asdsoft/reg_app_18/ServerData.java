@@ -6,6 +6,9 @@ public class ServerData {
     public String name3;
     public String name4;
     public String email;
+    public String email2;
+    public String email3;
+    public String email4;
     public String phone;
     public String date;
     public int total;
@@ -24,7 +27,9 @@ public class ServerData {
     public int Pixelate;
     public int Roboliga;
     public int Reverse_Coding;
-    public int Quiz;
+    public int QuizB;
+    public int QuizG;
+    public int QuizM;
     public int Software_Development;
     public int WebWeaver;
     public int WallStreet;
