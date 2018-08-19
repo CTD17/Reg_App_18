@@ -303,7 +303,7 @@ register.setEnabled(false);
         SQLiteDatabase sqLiteDatabase=openOrCreateDatabase("previousData",MODE_PRIVATE,null);
         Date c=Calendar.getInstance().getTime();
         SimpleDateFormat d=new SimpleDateFormat("dd-MM-yyyy");
-        prevData=new PrevData(bundle.getString("name"),bundle.getString("name2"),bundle.getString("name3"),bundle.getString("name4"),bundle.getString("phone"),bundle.getString("email"),bundle.getString("phone"),total,receipt.size(),d.format(c),bundle.getString("college"),bundle.getBoolean("ieee"),event);
+        prevData=new PrevData(bundle.getString("name"),bundle.getString("name2"),bundle.getString("name3"),bundle.getString("name4"),bundle.getString("phone"),bundle.getString("email"),bundle.getString("email2"),bundle.getString("email3"),bundle.getString("email4"),bundle.getString("phone"),total,receipt.size(),d.format(c),bundle.getString("college"),bundle.getBoolean("ieee"),event);
         Database database=new Database(prevData, sqLiteDatabase);
         makeRequest(database.getServeData());
     }
@@ -331,8 +331,11 @@ register.setEnabled(false);
                                                 serverData.name,
                                                 serverData.name2,
                                                 serverData.name3,
-                                                serverData.name3,
+                                                serverData.name4,
                                                 serverData.email,
+                                                serverData.email2,
+                                                serverData.email3,
+                                                serverData.email4,
                                                 serverData.phone,
                                                 serverData.date,
                                                 serverData.total,

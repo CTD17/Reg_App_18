@@ -9,6 +9,10 @@ public class PrevData {
     private String name3;
     private String name4;
     private String email;
+    private String email2;
+    private String email3;
+    private String email4;
+
     private String phone;
     private String date;
     private int total;
@@ -43,7 +47,18 @@ public class PrevData {
     {
         return email;
     }
-
+    public String getRegEmail2()
+    {
+        return email2;
+    }
+    public String getRegEmail3()
+    {
+        return email3;
+    }
+    public String getRegEmail4()
+    {
+        return email4;
+    }
     public String getRegPhone()
     {
         return phone;
@@ -87,6 +102,9 @@ public class PrevData {
     PrevData(String nameOfPerson, String name02, String name03, String name04,
              String ph,
              String mail,
+             String mail2,
+             String mail3,
+             String mail4,
              String id,
              int tot, int no,
              String prevDate,
@@ -100,6 +118,9 @@ public class PrevData {
         name4=name04;
         phone=ph;
         email=mail;
+        email2=mail2;
+        email3=mail3;
+        email4=mail4;
         uniId=id;
         total=tot;
         noOfEvents=no;

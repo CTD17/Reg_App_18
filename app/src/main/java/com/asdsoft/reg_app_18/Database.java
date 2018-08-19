@@ -106,6 +106,9 @@ public class Database {
         serverdata.name3=prevData.getRegName3();
         serverdata.name4=prevData.getRegName4();
         serverdata.email=prevData.getRegEmail();
+        serverdata.email2=prevData.getRegEmail2();
+        serverdata.email3=prevData.getRegEmail3();
+        serverdata.email4=prevData.getRegEmail4();
         serverdata.phone=prevData.getRegPhone();
         serverdata.date=prevData.getRegDate();
         serverdata.total=prevData.gettotal();

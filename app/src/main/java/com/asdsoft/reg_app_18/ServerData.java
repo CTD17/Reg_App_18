@@ -6,6 +6,9 @@ public class ServerData {
     public String name3;
     public String name4;
     public String email;
+    public String email2;
+    public String email3;
+    public String email4;
     public String phone;
     public String date;
     public int total;
