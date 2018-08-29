@@ -12,32 +12,32 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.pisb.reg_app_18.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".dummy" />
+        <activity android:name="com.pisb.reg_app_18.dummy" />
         <activity
-            android:name=".Register"
+            android:name="com.pisb.reg_app_18.Register"
             android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".QRCode"
+            android:name="com.pisb.reg_app_18.QRCode"
             android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Prev"
+            android:name="com.pisb.reg_app_18.Prev"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Details"
+            android:name="com.pisb.reg_app_18.Details"
             android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Bug"
+            android:name="com.pisb.reg_app_18.Bug"
             android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".LoginAct"
+            android:name="com.pisb.reg_app_18.LoginAct"
             android:noHistory="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -47,12 +47,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".VerifyPhoneActivity"
+            android:name="com.pisb.reg_app_18.VerifyPhoneActivity"
             android:noHistory="true"
             android:screenOrientation="portrait" />
-        <activity android:name=".Wait"
-            android:noHistory="true"
-            ></activity>
+        <activity android:name="com.pisb.reg_app_18.Wait"
+            android:screenOrientation="portrait"
+            android:noHistory="true" />
     </application>
 
 </manifest>

@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Prev">
+    tools:context="com.pisb.reg_app_18.Prev">
     <android.support.v7.widget.RecyclerView
+        android:orientation="horizontal"
         android:id="@+id/registrations"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/bg"
-        tools:layout_editor_absoluteX="8dp" />
+        tools:layout_editor_absoluteX="8dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/message"

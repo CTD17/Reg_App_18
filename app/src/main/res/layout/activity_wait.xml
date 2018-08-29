@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg"
-    tools:context=".Wait">
+    tools:context="com.pisb.reg_app_18.Wait">
 
 
     <TextView

@@ -1,10 +1,8 @@
-package com.asdsoft.reg_app_18;
+package com.pisb.reg_app_18;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.text.TextUtils;
 import android.util.Patterns;
 import android.view.View;
@@ -23,6 +21,8 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.asdsoft.reg_app_18.R;
 
 public class    MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

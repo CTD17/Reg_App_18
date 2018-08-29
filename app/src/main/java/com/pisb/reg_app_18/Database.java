@@ -1,24 +1,8 @@
-package com.asdsoft.reg_app_18;
+package com.pisb.reg_app_18;
 
 import android.content.ContentValues;
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.provider.ContactsContract;
-import android.util.Log;
-import android.widget.Toast;
-
-import java.util.List;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
-
-import static android.content.Context.MODE_PRIVATE;
-import static com.google.android.gms.flags.impl.SharedPreferencesFactory.getSharedPreferences;
 
 public class Database {
 

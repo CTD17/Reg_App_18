@@ -1,4 +1,4 @@
-package com.asdsoft.reg_app_18;
+package com.pisb.reg_app_18;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.asdsoft.reg_app_18.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.gms.tasks.TaskExecutors;
@@ -42,7 +43,7 @@ public class VerifyPhoneActivity extends AppCompatActivity {
         //and sending the verification code to the number
         Intent intent = getIntent();
         String mobile = intent.getStringExtra("mobile");
-        Toast.makeText(VerifyPhoneActivity.this,mobile,Toast.LENGTH_SHORT).show();
+       // Toast.makeText(VerifyPhoneActivity.this,mobile,Toast.LENGTH_SHORT).show();
         sendVerificationCode(mobile);
         findViewById(R.id.buttonSignIn).setOnClickListener(new View.OnClickListener() {
             @Override

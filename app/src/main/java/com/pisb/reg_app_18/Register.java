@@ -1,9 +1,9 @@
-package com.asdsoft.reg_app_18;
+package com.pisb.reg_app_18;
 
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -19,6 +19,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.asdsoft.reg_app_18.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -178,7 +179,7 @@ register.setEnabled(false);
             price.add(200);
             price.add(150);
             price.add(200);
-            price.add(100);
+            price.add(80);
             price.add(50);
             price.add(200);
             price.add(0);
@@ -199,7 +200,7 @@ register.setEnabled(false);
             price.add(180);
             price.add(120);
             price.add(160);
-            price.add(80);
+            price.add(60);
             price.add(40);
             price.add(160);
             price.add(0);
@@ -325,7 +326,7 @@ register.setEnabled(false);
                 .build();
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         ApiClient api = retrofit.create(ApiClient.class);
-        Toast.makeText(getApplicationContext(),gname,Toast.LENGTH_LONG).show();
+       // Toast.makeText(getApplicationContext(),gname,Toast.LENGTH_LONG).show();
         Call<List<DataRecv>> call = api.sendData(firebaseUser.getPhoneNumber(),
                                                 gname,
                                                 serverData.name,
@@ -374,8 +375,23 @@ register.setEnabled(false);
             @Override
             public void onFailure(Call<List<DataRecv>> call, Throwable t) {
                 progressBar.setVisibility(View.GONE);
+                Button b = findViewById(R.id.registerButton);
+                Toast.makeText(Register.this,"Check Your Internet", Toast.LENGTH_LONG).show();
+                b.setEnabled(true);
                 output[0] = "NEG";
-                Log.e("TAG",t.getMessage());
+                SQLiteDatabase sqLiteDatabase=openOrCreateDatabase("previousData",MODE_PRIVATE,null);
+                Cursor cursor=sqLiteDatabase.rawQuery("select * from " + "prev_reg" + ";",null);
+                cursor.moveToLast();
+                int temp=cursor.getInt(cursor.getColumnIndex("unique_id"));
+                sqLiteDatabase.execSQL("DELETE FROM prev_reg WHERE unique_id="+temp + ";");
+                cursor.close();
+                cursor=sqLiteDatabase.rawQuery("select * from " + "EVENTS" + ";",null);
+                cursor.moveToLast();
+                sqLiteDatabase.execSQL("DELETE FROM EVENTS WHERE uid="+temp + ";");
+                cursor.close();
+                sqLiteDatabase.close();
+
+                Log.e("TAGFail",t.getMessage());
             }
         });
 

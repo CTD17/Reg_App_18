@@ -1,4 +1,4 @@
-package com.asdsoft.reg_app_18;
+package com.pisb.reg_app_18;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.asdsoft.reg_app_18.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 

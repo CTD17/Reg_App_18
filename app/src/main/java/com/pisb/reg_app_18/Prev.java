@@ -1,4 +1,4 @@
-package com.asdsoft.reg_app_18;
+package com.pisb.reg_app_18;
 
 
 import android.database.Cursor;
@@ -10,6 +10,8 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+
+import com.asdsoft.reg_app_18.R;
 
 import java.util.ArrayList;
 
